@@ -1,0 +1,180 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+/* MAIN SECTION */
+.contact3 {
+  padding: 40px 15px;   /* height reduced */
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1050px;    /* slightly reduced width */
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;  /* rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12); /* outer shadow */
+}
+
+/* ROW SYSTEM */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* COLUMNS */
+.col-lg-6 {
+  width: 50%;
+  padding: 10px;
+}
+
+.col-lg-12 {
+  width: 100%;
+  padding: 10px;
+ 
+}
+.col-lg-12  button a{
+
+     text-decoration: none;
+     color: white;
+     font-size: 12px;
+
+}
+
+.col-lg-4 {
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* IMAGE CARD */
+.card-shadow img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CONTACT FORM */
+.contact-box {
+  padding: 10px 20px;
+}
+
+.contact-box h1 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+/* FORM ELEMENTS */
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-control {
+  width: 90%;                 /* reduced input width */
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea.form-control {
+  width: 90%;                 /* textarea reduced */
+  resize: none;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #000;
+}
+
+/* BUTTON */
+.btn-danger-gradiant {
+  background: #000;           /* black button */
+  color: #fff;                /* white text */
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 12px 40px;         /* button length increased */
+}
+
+.btn-danger-gradiant:hover {
+  background: #222;
+}
+
+/* CONTACT DETAILS */
+.card {
+  background: #fff;
+}
+
+.c-detail {
+  display: flex;
+  align-items: center;
+}
+
+.c-detail img {
+  width: 45px;
+}
+
+.c-detail h6 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.c-detail p {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* SPACING HELPERS */
+.mt-2 { margin-top: 8px; }
+.mt-3 { margin-top: 12px; }
+.mt-4 { margin-top: 16px; }
+.py-5 { padding: 40px 0; }
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 991px) {
+  .col-lg-6 {
+    width: 100%;
+  }
+
+  .col-lg-4 {
+    width: 50%;
+  }
+
+  .form-control,
+  textarea.form-control {
+    width: 100%;
+  }
+
+  .contact-box h1 {
+    font-size: 26px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .col-lg-4 {
+    width: 100%;
+  }
+
+  .contact-box h1 {
+    font-size: 22px;
+  }
+
+  .btn-danger-gradiant {
+    width: 100%;
+    text-align: center;
+  }
+}

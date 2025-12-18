@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 80px;
+  flex-wrap: wrap;
+}
+
+.footer-box {
+  width: 23%;
+}
+
+.about {
+  width: 30%;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-title img {
+  width: 50px;
+}
+
+.logo-title h2 {
+  color: #ff7a18;
+  margin: 0;
+}
+
+.footer-box p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 15px;
+}
+
+.footer-box h3 {
+  font-size: 20px;
+}
+
+.line {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 10px 0 20px;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.footer-box ul li i {
+  margin-right: 10px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: #ff7a18;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  background: #8b8b8b;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.bottom-links a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .footer-container {
+    padding: 40px;
+  }
+
+  .footer-box {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    padding: 20px 40px;
+    text-align: center;
+  }
+
+  .bottom-links {
+    margin-top: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .footer-container {
+    padding: 30px 20px;
+  }
+
+  .footer-box,
+  .about {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-title {
+    justify-content: center;
+  }
+
+  .logo-title h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+  .line {
+    margin: 10px auto 20px;
+  }
+
+  .footer-box ul li {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .social-icons {
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bottom-links a {
+    margin: 5px 10px;
+    display: inline-block;
+  }
+}
