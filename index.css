@@ -1,3 +1,89 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.carousel-item {
+    height: 90vh; /* almost full screen */
+    position: relative;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* =======================
+   BUTTON POSITION
+======================= */
+.carousel-caption-custom {
+    position: absolute;
+    right: 8%;
+    bottom: 20%;
+}
+
+/* =======================
+   READ MORE BUTTON
+======================= */
+.read-btn {
+    position: relative;
+    display: inline-block;
+    padding: 14px 38px;
+    font-size: 15px;
+    font-weight: 600;
+    color:white;
+    text-decoration: none;
+    border: 2px solid #30302f;
+    background: transparent;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* hover fill animation */
+.read-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: black;
+    transition: 0.4s ease;
+    z-index: -1;
+}
+
+.read-btn:hover::before {
+    left: 0;
+}
+
+.read-btn:hover {
+    color: #d47012;
+}
+
+/* =======================
+   ARROWS DARK
+======================= */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 768px) {
+    .carousel-caption-custom {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 15%;
+    }
+}
+
 /* GALLERY SECTION */
 .gallery-section {
   position: relative;
@@ -334,5 +420,120 @@
 
   .nav {
     display: none;
+  }
+}
+
+
+
+
+
+/* Section */
+.ngo-section {
+  padding: 60px 20px;
+  background: #f5f5f5;
+}
+
+/* Container */
+.ngo-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  align-items: stretch;   /* 🔥 KEY FIX */
+}
+
+/* Left Image Box */
+.ngo-image {
+  flex: 1;
+  animation: slideFromLeft 1.2s ease forwards;
+
+  
+    
+
+}
+
+/* Image */
+.ngo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* 🔥 SAME HEIGHT LOOK */
+  border-radius: 6px;
+}
+
+/* Right Content Card */
+.ngo-content {
+  flex: 1;
+  background: #fff;
+  padding: 40px;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+   animation: slideFromRight 1.2s ease forwards;
+}
+
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* RIGHT → CENTER */
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Heart */
+.heart {
+  color: orange;
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+/* Heading */
+.ngo-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #2c2c2c;
+}
+
+/* Paragraph */
+.ngo-content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .ngo-container {
+    flex-direction: column;
+  }
+
+  .ngo-image img {
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .ngo-content h2 {
+    font-size: 24px;
+  }
+
+  .ngo-content p {
+    font-size: 14px;
   }
 }
