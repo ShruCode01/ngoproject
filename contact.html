@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+      <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <hr>
+    <section class="contact-hero">
+        <div class="content">
+            <span class="icon">❤️</span>
+            <h1>Contact Us</h1>
+            <p>"BEST NGO FOR CSR IN INDIA: UDAAN FOUNDATION"</p>
+        </div>
+    </section>
+    <hr>
+    <section class="contact-section">
+    <div class="container">
+
+        <!-- LEFT CONTENT -->
+        <div class="left">
+            <span class="heart">❤️</span>
+            <h1>Get in Touch With Us</h1>
+            <p class="subtitle">WRITE A MESSAGE</p>
+
+            <p class="desc">
+                We are the best NGO in Delhi NCR, India. We endeavor for holistic
+                growth of the Nation and its people. We are the best Social
+                Organisation in Delhi NCR, India. Support by Donate to NGO or
+                Donate in India. We Mainly focused on poverty in India, Child
+                Development, Women Empowerment, Skill Development, Education
+                for poor & Street Children, Health programs, Environment
+                protection, Consumer awareness, Elderly care, Rural development
+                programs, Slum development, Donate for Livelihood, etc. Donate
+                to India's best NGO and support development.
+            </p>
+
+            <!-- SOCIAL ICONS -->
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="right">
+            <form>
+                <div class="row">
+                    <input type="text" placeholder="Your Name *">
+                    <input type="email" placeholder="Your Email *">
+                </div>
+
+                <input type="text" placeholder="Your Subject">
+                <textarea placeholder="Your message"></textarea>
+
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<section class="info-section">
+    <div class="info-container">
+
+        <div class="info-card address">
+            <h2>Address</h2>
+            <p>H-28, Om Complex, 1st</p>
+            <p>Floor, Laxmi Nagar Delhi - 110092</p>
+        </div>
+
+        <div class="info-card phone">
+            <h2>Phone No</h2>
+            <p>+91 98188 85691</p>
+        </div>
+
+        <div class="info-card email">
+            <h2>Email id</h2>
+            <p>info@udaanngo.org</p>
+        </div>
+
+    </div>
+</section>
+
+  <div id="footer"></div>
+    <script >window.addEventListener("load", () => {
+    const content = document.querySelector(".content");
+    content.style.opacity = "0";
+    content.style.transform = "translateY(20px)";
+
+    setTimeout(() => {
+        content.style.transition = "0.8s ease";
+        content.style.opacity = "1";
+        content.style.transform = "translateY(0)";
+    }, 200);
+});
+</script>
+<script src="Footer.js"></script>
+</body>
+</html>
