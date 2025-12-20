@@ -833,7 +833,7 @@
   padding: 80px 0;
 }
 .heart{
-    margin-left: 720px;
+    margin: auto;
     font-size: 30px;
 }
 
@@ -848,7 +848,6 @@
   margin-bottom: 50px;
   margin-left:550px;
   color: #000;
-
 }
 
 /* Logos row */
@@ -867,7 +866,6 @@
   filter: grayscale(100%);
   opacity: 0.85;
   transition: 0.3s ease;
-  
 }
 
 .donors-logos img:hover {
@@ -875,20 +873,55 @@
   opacity: 1;
 }
 
-/* Responsive */
+/* Responsive - FIXED */
 @media (max-width: 768px) {
   .donors-container h2 {
-    text-align: center;
+    margin-left: 0 !important;  /* ← FIX: Remove left margin */
+    text-align: center;         /* ← Centers the text */
+    font-size: 32px;           /* ← Smaller font for mobile */
   }
-
+  
+  .heart {
+    margin-left: 600px;            /* ← Centers heart on mobile */
+    display: block;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+  
   .donors-logos {
     justify-content: center;
+    gap: 20px;                 /* ← Smaller gap on mobile */
   }
 
   .donors-logos img {
     max-height: 60px;
   }
+  
+  .donors-section {
+    padding: 40px 0;           /* ← Less padding on mobile */
+  }
 }
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .donors-container {
+    width: 95%;
+  }
+  
+  .donors-container h2 {
+    font-size: 28px;
+  }
+  
+  .donors-logos {
+    flex-direction: column;    /* ← Stack logos vertically */
+    gap: 15px;
+  }
+  
+  .donors-logos img {
+    max-height: 50px;
+  }
+}
+
 
 /* Section */
 .ngo-section {
@@ -931,6 +964,26 @@
   border-radius: 6px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
    animation: slideFromRight 1.2s ease forwards;
+}
+
+@media (max-width: 768px) {
+
+  .ngo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ngo-content {
+    animation: none;           /* 🔥 stop off-screen animation */
+    transform: translateX(0);  /* 🔥 force visible position */
+    opacity: 1;
+    margin-top: 20px;
+  }
+
+  .ngo-image img {
+    height: auto;
+  }
+
 }
 
 
