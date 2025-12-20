@@ -20,7 +20,7 @@
 .contact-curve {
   background: #4a4a4a;
   color: #fff;
-  padding: 30px 50px 30px 70px;
+  padding: 20px 40px 20px 50px;
   display: flex;
   align-items: center;
   gap: 50px;
@@ -38,7 +38,7 @@
 }
 
 .contact-curve span {
-  font-size: 18px;
+  font-size: 14px;
   white-space: nowrap;
 }
 
@@ -151,7 +151,7 @@
 
 .hamburger {
   display: none;
-  font-size: 40px;
+  font-size: 20px;
   color: #fff;
   cursor: pointer;
   text-align: end;
@@ -176,7 +176,7 @@
   padding: 14px 0;
   text-decoration: none;
   border-bottom: 1px solid #333;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .mobile-menu a:hover {
@@ -185,7 +185,7 @@
 
 .mobile-menu .close {
   color: #fff;
-  font-size: 68px;
+  font-size: 48px;
   cursor: pointer;
   display: block;
   text-align: right;
@@ -229,7 +229,7 @@
   .contact-curve {
     width: 100vw;
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
     border-radius: 0;
   }
 
@@ -251,6 +251,6 @@
   .hamburger {
     margin-left: auto;
     display: block;  
-    padding: 30px;
+    padding: 10px;
   }
 }

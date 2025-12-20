@@ -1,12 +1,29 @@
+document.addEventListener("DOMContentLoaded", function () {
 
-  const hamburger = document.querySelector(".hamburger");
-  const mobileMenu = document.querySelector(".mobile-menu");
-  const closeBtn = document.querySelector(".close");
+  fetch("navbar.html")
+    .then(function (response) {
+      return response.text();
+    })
+    .then(function (html) {
+      document.getElementById("navbar").innerHTML = html;
 
-  hamburger.addEventListener("click", () => {
-    mobileMenu.style.right = "0";
-  });
+      // Hamburger logic (AFTER navbar loads)
+      const hamburger = document.querySelector(".hamburger");
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const closeBtn = document.querySelector(".close");
 
-  closeBtn.addEventListener("click", () => {
-    mobileMenu.style.right = "-100%";
-  });
+      if (hamburger && mobileMenu && closeBtn) {
+        hamburger.addEventListener("click", function () {
+          mobileMenu.style.right = "0";
+        });
+
+        closeBtn.addEventListener("click", function () {
+          mobileMenu.style.right = "-100%";
+        });
+      }
+    })
+    .catch(function (error) {
+      console.error("Navbar not loaded:", error);
+    });
+
+});
